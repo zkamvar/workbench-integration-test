@@ -51,12 +51,12 @@ jobs:
       - name: "Setup Lesson Engine"
         uses: carpentries/actions/setup-sandpaper@main
         with:
-          cache-version: ${{ secrets.CACHE_VERSION }}
+          cache-version: ${{ matrix.lesson }}
 
       - name: "Setup Package Cache"
         uses: carpentries/actions/setup-lesson-deps@main
         with:
-          cache-version: ${{ secrets.CACHE_VERSION }}
+          cache-version: ${{ matrix.lesson }}
 
       - name: "Deploy Site"
         run: |
