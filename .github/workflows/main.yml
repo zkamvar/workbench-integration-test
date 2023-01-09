@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '0 0 * * 1'
   workflow_dispatch:
+    inputs:
+      reset:
+        description: 'Reset cached markdown files'
+        required: false
+        default: false
+        type: boolean
 jobs:
   check-template:
     permissions:
