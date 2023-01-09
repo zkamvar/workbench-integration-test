@@ -34,9 +34,6 @@
     <loc>https://preview.carpentries.org/r-socialsciabout.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/r-socialsciaio.html</loc>
-  </url>
-  <url>
     <loc>https://preview.carpentries.org/r-socialscidata-visualisation-handout.html</loc>
   </url>
   <url>
@@ -47,9 +44,6 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-socialsciguide.html</loc>
-  </url>
-  <url>
-    <loc>https://preview.carpentries.org/r-socialsciimages.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-socialsciindex.html</loc>
@@ -88,9 +82,6 @@
     <loc>https://preview.carpentries.org/r-socialsciinstructor/about.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/r-socialsciinstructor/aio.html</loc>
-  </url>
-  <url>
     <loc>https://preview.carpentries.org/r-socialsciinstructor/data-visualisation-handout.html</loc>
   </url>
   <url>
@@ -103,19 +94,10 @@
     <loc>https://preview.carpentries.org/r-socialsciinstructor/guide.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/r-socialsciinstructor/images.html</loc>
-  </url>
-  <url>
     <loc>https://preview.carpentries.org/r-socialsciinstructor/index.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/r-socialsciinstructor/instructor-notes.html</loc>
-  </url>
-  <url>
     <loc>https://preview.carpentries.org/r-socialsciinstructor/intro-R-handout.html</loc>
-  </url>
-  <url>
-    <loc>https://preview.carpentries.org/r-socialsciinstructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-socialsciinstructor/profiles.html</loc>
@@ -130,13 +112,7 @@
     <loc>https://preview.carpentries.org/r-socialsciinstructor/starting-with-data-handout.html</loc>
   </url>
   <url>
-    <loc>https://preview.carpentries.org/r-socialsciinstructor-notes.html</loc>
-  </url>
-  <url>
     <loc>https://preview.carpentries.org/r-socialsciintro-R-handout.html</loc>
-  </url>
-  <url>
-    <loc>https://preview.carpentries.org/r-socialscikey-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-socialsciprofiles.html</loc>
