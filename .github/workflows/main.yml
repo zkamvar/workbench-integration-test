@@ -46,6 +46,7 @@ jobs:
       - name: "Copy and setup lesson"
         run: |
           cp -r lesson/* .
+          printf "sandpaper: carpentries/sandpaper\nvarnish: carpentries/varnish\npegboard: carpentries/pegboard\n" >> config.yaml
 
       - name: "Set up R"
         uses: r-lib/actions/setup-r@v2
