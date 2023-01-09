@@ -1,2 +1,8 @@
-# workbench-integration-test
-Integration Testing for The Carpentries Workbench
+# Integration Testing for The Carpentries Workbench
+
+This repository contains a matrix workflow that will download and test the
+building of a select group of workbench repositories to ensure that they work.
+
+
+At the moment, the build does not confirm anything beyond the fact that output
+is created, but it could serve as a future framework for integration tests.
