@@ -1,0 +1,70 @@
+name: Test template
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+jobs:
+  check-template:
+    permissions:
+      checks: write
+      contents: write
+      pages: write
+    name: ${{ matrix.lesson-name }}
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        lesson: [fishtree-attempt/instructor-training, fishtree-attempt/r-socialsci, carpentries/sandpaper-docs, fishtree-attempt/r-raster-vector-geospatial]
+        experimental: [false]
+        include:
+          - lesson: fishtree-attempt/instructor-training
+            lesson-name: Instructor Training
+          - lesson: fishtree-attempt/r-socialsci
+            lesson-name: R for Social Scientists
+          - lesson: carpentries/sandpaper-docs
+            lesson-name: Workbench Documentation
+          - lesson: fishtree-attempt/r-raster-vector-geospatial
+            lesson-name: Raster and Vector Geospatial Data with R
+            experimental: true
+    defaults:
+      run:
+        shell: bash # forces 'Git for Windows' on Windows
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      RENV_PATHS_ROOT: ~/.local/share/renv/
+    steps:
+      - name: "Checkout Lesson"
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ matrix.lesson }}
+          
+      - name: "Set up R"
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+          install-r: false
+
+      - name: "Set up Pandoc"
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: "Setup Lesson Engine"
+        uses: carpentries/actions/setup-sandpaper@main
+        with:
+          cache-version: ${{ secrets.CACHE_VERSION }}
+
+      - name: "Setup Package Cache"
+        uses: carpentries/actions/setup-lesson-deps@main
+        with:
+          cache-version: ${{ secrets.CACHE_VERSION }}
+
+      - name: "Deploy Site"
+        run: |
+          reset <- "${{ github.event.inputs.reset }}" == "true"
+          sandpaper::package_cache_trigger(TRUE)
+          sandpaper:::ci_deploy(reset = reset, 
+            md_branch = "${{ matrix.lesson }}/markdown", 
+            site_branch = "$${{ matrix.lesson }}/site"
+          )
+        shell: Rscript {0}
+    
