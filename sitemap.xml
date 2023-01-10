@@ -52,6 +52,9 @@
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialabout.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialaio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialdiscuss.html</loc>
   </url>
   <url>
@@ -59,6 +62,9 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialguide.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialimages.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialindex.html</loc>
@@ -115,6 +121,9 @@
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/about.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/discuss.html</loc>
   </url>
   <url>
@@ -124,7 +133,16 @@
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/profiles.html</loc>
@@ -134,6 +152,12 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialinstructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/r-raster-vector-geospatialkey-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/r-raster-vector-geospatialprofiles.html</loc>
