@@ -153,17 +153,11 @@ and more detailed and numerous relationships. However, **both may be perfectly u
 
 Returning to our example levels of skill development:
 
-- ```
-  A *novice* has a minimal mental model of surface features of the domain. Inaccuracies based on limited prior knowledge may interfere with adding new information.
-  ```
-
+- A *novice* has a minimal mental model of surface features of the domain. Inaccuracies based on limited prior knowledge may interfere with adding new information.
 Predictions are likely to borrow heavily from mental models of other domains
 which seem superficially similar.
 
-- ```
-  A *competent practitioner* has a mental model that is useful for everyday purposes. Most new information
-  ```
-
+- A *competent practitioner* has a mental model that is useful for everyday purposes. Most new information
 they are likely to encounter will fit well with their existing model. Even though many potential elements of their mental model may
 still be missing or wrong, predictions about their area of work are usually accurate.
 
