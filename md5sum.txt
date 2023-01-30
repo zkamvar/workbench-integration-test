@@ -26,6 +26,7 @@
 "learners/starting-with-data-handout.Rmd" "b7deeaa71b74f89ae011c8159e77b36a" "site/built/starting-with-data-handout.md" "2023-01-09"
 "learners/data-wrangling-handout.Rmd" "03ecc7a97f4207b7bc80c78ecbcfcb69" "site/built/data-wrangling-handout.md" "2023-01-09"
 "learners/data-visualisation-handout.Rmd" "af73107d4c87c96857e7d1a803f12013" "site/built/data-visualisation-handout.md" "2023-01-09"
+"learners/setup.md" "e45a6fadce9fd5bc3613770539c12ece" "site/built/setup.md" "2023-01-30"
 "lesson/CODE_OF_CONDUCT.md" "b9e50e533e31f7311ba0a62a3876e493" "site/built/CODE_OF_CONDUCT.md" "2023-01-09"
 "lesson/LICENSE.md" "00c779732b68ef3e45d40995b6157458" "site/built/LICENSE.md" "2023-01-09"
 "lesson/config.yaml" "667c8e4097d8df2df06a9f31bfb7d6f6" "site/built/config.yaml" "2023-01-09"
