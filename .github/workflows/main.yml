@@ -21,16 +21,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lesson: [fishtree-attempt/instructor-training, fishtree-attempt/r-socialsci, carpentries/sandpaper-docs, fishtree-attempt/r-raster-vector-geospatial]
+        lesson: [fishtree-attempt/bioc-rnaseq, carpentries/instructor-training, datacarpentry/r-socialsci, carpentries/sandpaper-docs, datacarpentry/r-raster-vector-geospatial]
         experimental: [false]
         include:
-          - lesson: fishtree-attempt/instructor-training
+          - lesson: fishtree-attempt/bioc-rnaseq
             lesson-name: Instructor Training
-          - lesson: fishtree-attempt/r-socialsci
+          - lesson: carpentries/instructor-training
+            lesson-name: Instructor Training
+          - lesson: datacarpentry/r-socialsci
             lesson-name: R for Social Scientists
           - lesson: carpentries/sandpaper-docs
             lesson-name: Workbench Documentation
-          - lesson: fishtree-attempt/r-raster-vector-geospatial
+          - lesson: datacarpentry/r-raster-vector-geospatial
             lesson-name: Raster and Vector Geospatial Data with R
             experimental: true
     defaults:
