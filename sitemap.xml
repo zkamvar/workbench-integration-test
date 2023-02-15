@@ -31,6 +31,9 @@
     <loc>https://preview.carpentries.org/bioc-rnaseqabout.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqaio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqdiscuss.html</loc>
   </url>
   <url>
@@ -38,6 +41,9 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqguide.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqimages.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqindex.html</loc>
@@ -73,6 +79,9 @@
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/about.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/discuss.html</loc>
   </url>
   <url>
@@ -82,7 +91,16 @@
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/profiles.html</loc>
@@ -92,6 +110,12 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqinstructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqinstructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/bioc-rnaseqkey-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/bioc-rnaseqprofiles.html</loc>
