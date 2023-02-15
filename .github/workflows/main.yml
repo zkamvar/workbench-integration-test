@@ -25,7 +25,7 @@ jobs:
         experimental: [false]
         include:
           - lesson: fishtree-attempt/bioc-rnaseq
-            lesson-name: Instructor Training
+            lesson-name: BioConductor RNAseq
           - lesson: carpentries/instructor-training
             lesson-name: Instructor Training
           - lesson: datacarpentry/r-socialsci
