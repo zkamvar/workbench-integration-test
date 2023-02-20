@@ -1030,10 +1030,10 @@
     },
     "fs": {
       "Package": "fs",
-      "Version": "1.6.1",
+      "Version": "1.6.0",
       "Source": "Repository",
       "Repository": "RSPM",
-      "Hash": "f4dcd23b67e33d851d2079f703e8b985",
+      "Hash": "0120e8c933bace1141e0b0d376b0c010",
       "Requirements": []
     },
     "futile.logger": {
@@ -1128,10 +1128,10 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.4.1",
+      "Version": "3.4.0",
       "Source": "Repository",
       "Repository": "RSPM",
-      "Hash": "d494daf77c4aa7f084dbbe6ca5dcaca7",
+      "Hash": "fd2aab12f54400c6bca43687231e246b",
       "Requirements": [
         "MASS",
         "cli",
@@ -1337,11 +1337,8 @@
       "Package": "httpuv",
       "Version": "1.6.9",
       "Source": "Repository",
-      "RemoteType": "repository",
-      "RemoteUrl": "https://github.com/rstudio/httpuv",
-      "RemoteRef": "v1.6.9",
-      "RemoteSha": "4cdd15f02598cb94fa49385607f2c9f76de40502",
-      "Hash": "11570fdd617e8415c544f6b7d3c98444",
+      "Repository": "RSPM",
+      "Hash": "1046aa31a57eae8b357267a56a0b6d8b",
       "Requirements": [
         "R6",
         "Rcpp",
@@ -1582,10 +1579,10 @@
     },
     "nlme": {
       "Package": "nlme",
-      "Version": "3.1-162",
+      "Version": "3.1-161",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "0984ce8da8da9ead8643c5cbbb60f83e",
+      "Repository": "RSPM",
+      "Hash": "b49e163093c0ef46fbbfc40bcb87916c",
       "Requirements": [
         "lattice"
       ]

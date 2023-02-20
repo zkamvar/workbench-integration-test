@@ -282,7 +282,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Experimental design</h1>
-        <p> Last updated on 2023-02-15 | 
+        <p> Last updated on 2023-02-20 | 
         
         <a href="https://github.com/fishtree-attempt/bioc-rnaseq/edit/main/episodes/03-experimental-design.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -354,58 +354,104 @@ suitable design matrix, how coefficients are to be interpreted.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545336 CNS_RNA-seq_10C    GSM2545336 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Cerebellum    14
-GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     9
-GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum    10
-GSM2545339 CNS_RNA-seq_13C    GSM2545339 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    15
-GSM2545340 CNS_RNA-seq_14C    GSM2545340 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Cerebellum    18
-GSM2545341 CNS_RNA-seq_17C    GSM2545341 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Cerebellum     6
-GSM2545342  CNS_RNA-seq_1C    GSM2545342 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Cerebellum     5
-GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum    11
-GSM2545344 CNS_RNA-seq_21C    GSM2545344 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    22
-GSM2545345 CNS_RNA-seq_22C    GSM2545345 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Cerebellum    13
-GSM2545346 CNS_RNA-seq_25C    GSM2545346 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Cerebellum    23
-GSM2545347 CNS_RNA-seq_26C    GSM2545347 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Cerebellum    24
-GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     8
-GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     7
-GSM2545350 CNS_RNA-seq_29C    GSM2545350 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Cerebellum     1
-GSM2545351  CNS_RNA-seq_2C    GSM2545351 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Cerebellum    16
-GSM2545352 CNS_RNA-seq_30C    GSM2545352 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    21
-GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     4
-GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     2
-GSM2545355 CNS_RNA-seq_571    GSM2545355 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Spinalcord     1
-GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     2
-GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     3
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545359 CNS_RNA-seq_585    GSM2545359 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Spinalcord     5
-GSM2545360 CNS_RNA-seq_589    GSM2545360 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Spinalcord     6
-GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     7
-GSM2545362  CNS_RNA-seq_5C    GSM2545362 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    20
-GSM2545363  CNS_RNA-seq_6C    GSM2545363 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Cerebellum    12
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10
-GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord    11
-GSM2545368 CNS_RNA-seq_728    GSM2545368 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Spinalcord    12
-GSM2545369 CNS_RNA-seq_729    GSM2545369 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Spinalcord    13
-GSM2545370 CNS_RNA-seq_730    GSM2545370 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Spinalcord    14
-GSM2545371 CNS_RNA-seq_731    GSM2545371 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    15
-GSM2545372 CNS_RNA-seq_733    GSM2545372 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Spinalcord    17
-GSM2545373 CNS_RNA-seq_735    GSM2545373 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day4 Spinalcord    18
-GSM2545374 CNS_RNA-seq_736    GSM2545374 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Spinalcord    19
-GSM2545375 CNS_RNA-seq_738    GSM2545375 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    20
-GSM2545376 CNS_RNA-seq_740    GSM2545376 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    21
-GSM2545377 CNS_RNA-seq_741    GSM2545377 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    22
-GSM2545378 CNS_RNA-seq_742    GSM2545378 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Spinalcord    23
-GSM2545379 CNS_RNA-seq_743    GSM2545379 Mus musculus 8 weeks   Male  InfluenzaA C57BL/6 Day8 Spinalcord    24
-GSM2545380  CNS_RNA-seq_9C    GSM2545380 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day8 Cerebellum    19</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545336 CNS_RNA-seq_10C    GSM2545336 Mus musculus 8 weeks Female
+GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female
+GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female
+GSM2545339 CNS_RNA-seq_13C    GSM2545339 Mus musculus 8 weeks Female
+GSM2545340 CNS_RNA-seq_14C    GSM2545340 Mus musculus 8 weeks   Male
+GSM2545341 CNS_RNA-seq_17C    GSM2545341 Mus musculus 8 weeks   Male
+GSM2545342  CNS_RNA-seq_1C    GSM2545342 Mus musculus 8 weeks Female
+GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male
+GSM2545344 CNS_RNA-seq_21C    GSM2545344 Mus musculus 8 weeks Female
+GSM2545345 CNS_RNA-seq_22C    GSM2545345 Mus musculus 8 weeks   Male
+GSM2545346 CNS_RNA-seq_25C    GSM2545346 Mus musculus 8 weeks   Male
+GSM2545347 CNS_RNA-seq_26C    GSM2545347 Mus musculus 8 weeks   Male
+GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female
+GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male
+GSM2545350 CNS_RNA-seq_29C    GSM2545350 Mus musculus 8 weeks   Male
+GSM2545351  CNS_RNA-seq_2C    GSM2545351 Mus musculus 8 weeks Female
+GSM2545352 CNS_RNA-seq_30C    GSM2545352 Mus musculus 8 weeks Female
+GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female
+GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male
+GSM2545355 CNS_RNA-seq_571    GSM2545355 Mus musculus 8 weeks   Male
+GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male
+GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545359 CNS_RNA-seq_585    GSM2545359 Mus musculus 8 weeks Female
+GSM2545360 CNS_RNA-seq_589    GSM2545360 Mus musculus 8 weeks   Male
+GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male
+GSM2545362  CNS_RNA-seq_5C    GSM2545362 Mus musculus 8 weeks Female
+GSM2545363  CNS_RNA-seq_6C    GSM2545363 Mus musculus 8 weeks   Male
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male
+GSM2545368 CNS_RNA-seq_728    GSM2545368 Mus musculus 8 weeks   Male
+GSM2545369 CNS_RNA-seq_729    GSM2545369 Mus musculus 8 weeks   Male
+GSM2545370 CNS_RNA-seq_730    GSM2545370 Mus musculus 8 weeks Female
+GSM2545371 CNS_RNA-seq_731    GSM2545371 Mus musculus 8 weeks Female
+GSM2545372 CNS_RNA-seq_733    GSM2545372 Mus musculus 8 weeks   Male
+GSM2545373 CNS_RNA-seq_735    GSM2545373 Mus musculus 8 weeks   Male
+GSM2545374 CNS_RNA-seq_736    GSM2545374 Mus musculus 8 weeks Female
+GSM2545375 CNS_RNA-seq_738    GSM2545375 Mus musculus 8 weeks Female
+GSM2545376 CNS_RNA-seq_740    GSM2545376 Mus musculus 8 weeks Female
+GSM2545377 CNS_RNA-seq_741    GSM2545377 Mus musculus 8 weeks Female
+GSM2545378 CNS_RNA-seq_742    GSM2545378 Mus musculus 8 weeks   Male
+GSM2545379 CNS_RNA-seq_743    GSM2545379 Mus musculus 8 weeks   Male
+GSM2545380  CNS_RNA-seq_9C    GSM2545380 Mus musculus 8 weeks Female
+             infection  strain time     tissue mouse
+GSM2545336  InfluenzaA C57BL/6 Day8 Cerebellum    14
+GSM2545337 NonInfected C57BL/6 Day0 Cerebellum     9
+GSM2545338 NonInfected C57BL/6 Day0 Cerebellum    10
+GSM2545339  InfluenzaA C57BL/6 Day4 Cerebellum    15
+GSM2545340  InfluenzaA C57BL/6 Day4 Cerebellum    18
+GSM2545341  InfluenzaA C57BL/6 Day8 Cerebellum     6
+GSM2545342  InfluenzaA C57BL/6 Day8 Cerebellum     5
+GSM2545343 NonInfected C57BL/6 Day0 Cerebellum    11
+GSM2545344  InfluenzaA C57BL/6 Day4 Cerebellum    22
+GSM2545345  InfluenzaA C57BL/6 Day4 Cerebellum    13
+GSM2545346  InfluenzaA C57BL/6 Day8 Cerebellum    23
+GSM2545347  InfluenzaA C57BL/6 Day8 Cerebellum    24
+GSM2545348 NonInfected C57BL/6 Day0 Cerebellum     8
+GSM2545349 NonInfected C57BL/6 Day0 Cerebellum     7
+GSM2545350  InfluenzaA C57BL/6 Day4 Cerebellum     1
+GSM2545351  InfluenzaA C57BL/6 Day8 Cerebellum    16
+GSM2545352  InfluenzaA C57BL/6 Day4 Cerebellum    21
+GSM2545353 NonInfected C57BL/6 Day0 Cerebellum     4
+GSM2545354 NonInfected C57BL/6 Day0 Cerebellum     2
+GSM2545355  InfluenzaA C57BL/6 Day4 Spinalcord     1
+GSM2545356 NonInfected C57BL/6 Day0 Spinalcord     2
+GSM2545357 NonInfected C57BL/6 Day0 Spinalcord     3
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545359  InfluenzaA C57BL/6 Day8 Spinalcord     5
+GSM2545360  InfluenzaA C57BL/6 Day8 Spinalcord     6
+GSM2545361 NonInfected C57BL/6 Day0 Spinalcord     7
+GSM2545362  InfluenzaA C57BL/6 Day4 Cerebellum    20
+GSM2545363  InfluenzaA C57BL/6 Day4 Cerebellum    12
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10
+GSM2545367 NonInfected C57BL/6 Day0 Spinalcord    11
+GSM2545368  InfluenzaA C57BL/6 Day4 Spinalcord    12
+GSM2545369  InfluenzaA C57BL/6 Day4 Spinalcord    13
+GSM2545370  InfluenzaA C57BL/6 Day8 Spinalcord    14
+GSM2545371  InfluenzaA C57BL/6 Day4 Spinalcord    15
+GSM2545372  InfluenzaA C57BL/6 Day8 Spinalcord    17
+GSM2545373  InfluenzaA C57BL/6 Day4 Spinalcord    18
+GSM2545374  InfluenzaA C57BL/6 Day8 Spinalcord    19
+GSM2545375  InfluenzaA C57BL/6 Day4 Spinalcord    20
+GSM2545376  InfluenzaA C57BL/6 Day4 Spinalcord    21
+GSM2545377  InfluenzaA C57BL/6 Day4 Spinalcord    22
+GSM2545378  InfluenzaA C57BL/6 Day8 Spinalcord    23
+GSM2545379  InfluenzaA C57BL/6 Day8 Spinalcord    24
+GSM2545380  InfluenzaA C57BL/6 Day8 Cerebellum    19</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta</span>,</span>
+<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta</span>, </span>
 <span>                      designFormula <span class="op">=</span> <span class="op">~</span> <span class="va">tissue</span> <span class="op">+</span> <span class="va">time</span> <span class="op">+</span> <span class="va">sex</span><span class="op">)</span></span>
 <span><span class="va">vd</span><span class="op">$</span><span class="va">cooccurrenceplots</span></span></code></pre>
 </div>
@@ -414,40 +460,49 @@ GSM2545380  CNS_RNA-seq_9C    GSM2545380 Mus musculus 8 weeks Female  InfluenzaA
 </h3>
 <pre class="output" tabindex="0"><code>$`tissue = Cerebellum`</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-4-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper">
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-5-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>
 $`tissue = Spinalcord`</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-4-2.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><section id="compare-males-and-females-non-infected-spinal-cord"><h2 class="section-heading">Compare males and females, non-infected spinal cord<a class="anchor" aria-label="anchor" href="#compare-males-and-females-non-infected-spinal-cord"></a>
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-5-2.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><section id="compare-males-and-females-non-infected-spinal-cord"><h2 class="section-heading">Compare males and females, non-infected spinal cord<a class="anchor" aria-label="anchor" href="#compare-males-and-females-non-infected-spinal-cord"></a>
 </h2>
 <hr class="half-width"><div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">meta_noninf_spc</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span> <span class="fu">filter</span><span class="op">(</span><span class="va">time</span> <span class="op">==</span> <span class="st">"Day0"</span> <span class="op">&amp;</span></span>
+<code class="sourceCode R"><span><span class="va">meta_noninf_spc</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span> <span class="fu">filter</span><span class="op">(</span><span class="va">time</span> <span class="op">==</span> <span class="st">"Day0"</span> <span class="op">&amp;</span> </span>
 <span>                                       <span class="va">tissue</span> <span class="op">==</span> <span class="st">"Spinalcord"</span><span class="op">)</span></span>
 <span><span class="va">meta_noninf_spc</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     2
-GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     3
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     7
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10
-GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male
+GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male
+             infection  strain time     tissue mouse
+GSM2545356 NonInfected C57BL/6 Day0 Spinalcord     2
+GSM2545357 NonInfected C57BL/6 Day0 Spinalcord     3
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545361 NonInfected C57BL/6 Day0 Spinalcord     7
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10
+GSM2545367 NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf_spc</span>,</span>
+<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf_spc</span>, </span>
 <span>                      designFormula <span class="op">=</span> <span class="op">~</span> <span class="va">sex</span><span class="op">)</span></span>
 <span><span class="va">vd</span><span class="op">$</span><span class="va">designmatrix</span></span></code></pre>
 </div>
@@ -475,7 +530,7 @@ GSM2545367           1       1</code></pre>
 </h3>
 <pre class="output" tabindex="0"><code>[[1]]</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-5-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge1" class="callout challenge">
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-6-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -508,19 +563,32 @@ Day4, Day8) in the male spinal cord samples, and visualize it using
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age  sex   infection  strain time     tissue mouse
-GSM2545355 CNS_RNA-seq_571    GSM2545355 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day4 Spinalcord     1
-GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks Male NonInfected C57BL/6 Day0 Spinalcord     2
-GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks Male NonInfected C57BL/6 Day0 Spinalcord     3
-GSM2545360 CNS_RNA-seq_589    GSM2545360 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day8 Spinalcord     6
-GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks Male NonInfected C57BL/6 Day0 Spinalcord     7
-GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks Male NonInfected C57BL/6 Day0 Spinalcord    11
-GSM2545368 CNS_RNA-seq_728    GSM2545368 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day4 Spinalcord    12
-GSM2545369 CNS_RNA-seq_729    GSM2545369 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day4 Spinalcord    13
-GSM2545372 CNS_RNA-seq_733    GSM2545372 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day8 Spinalcord    17
-GSM2545373 CNS_RNA-seq_735    GSM2545373 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day4 Spinalcord    18
-GSM2545378 CNS_RNA-seq_742    GSM2545378 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day8 Spinalcord    23
-GSM2545379 CNS_RNA-seq_743    GSM2545379 Mus musculus 8 weeks Male  InfluenzaA C57BL/6 Day8 Spinalcord    24</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age  sex   infection
+GSM2545355 CNS_RNA-seq_571    GSM2545355 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks Male NonInfected
+GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks Male NonInfected
+GSM2545360 CNS_RNA-seq_589    GSM2545360 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks Male NonInfected
+GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks Male NonInfected
+GSM2545368 CNS_RNA-seq_728    GSM2545368 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545369 CNS_RNA-seq_729    GSM2545369 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545372 CNS_RNA-seq_733    GSM2545372 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545373 CNS_RNA-seq_735    GSM2545373 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545378 CNS_RNA-seq_742    GSM2545378 Mus musculus 8 weeks Male  InfluenzaA
+GSM2545379 CNS_RNA-seq_743    GSM2545379 Mus musculus 8 weeks Male  InfluenzaA
+            strain time     tissue mouse
+GSM2545355 C57BL/6 Day4 Spinalcord     1
+GSM2545356 C57BL/6 Day0 Spinalcord     2
+GSM2545357 C57BL/6 Day0 Spinalcord     3
+GSM2545360 C57BL/6 Day8 Spinalcord     6
+GSM2545361 C57BL/6 Day0 Spinalcord     7
+GSM2545367 C57BL/6 Day0 Spinalcord    11
+GSM2545368 C57BL/6 Day4 Spinalcord    12
+GSM2545369 C57BL/6 Day4 Spinalcord    13
+GSM2545372 C57BL/6 Day8 Spinalcord    17
+GSM2545373 C57BL/6 Day4 Spinalcord    18
+GSM2545378 C57BL/6 Day8 Spinalcord    23
+GSM2545379 C57BL/6 Day8 Spinalcord    24</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -557,7 +625,7 @@ GSM2545379           1        0        1</code></pre>
 </h3>
 <pre class="output" tabindex="0"><code>[[1]]</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-6-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></div>
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-7-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
 </div>
@@ -573,28 +641,44 @@ GSM2545379           1        0        1</code></pre>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     9
-GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum    10
-GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum    11
-GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     8
-GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     7
-GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     4
-GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     2
-GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     2
-GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     3
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     7
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10
-GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female
+GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female
+GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male
+GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female
+GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male
+GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female
+GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male
+GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male
+GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male
+             infection  strain time     tissue mouse
+GSM2545337 NonInfected C57BL/6 Day0 Cerebellum     9
+GSM2545338 NonInfected C57BL/6 Day0 Cerebellum    10
+GSM2545343 NonInfected C57BL/6 Day0 Cerebellum    11
+GSM2545348 NonInfected C57BL/6 Day0 Cerebellum     8
+GSM2545349 NonInfected C57BL/6 Day0 Cerebellum     7
+GSM2545353 NonInfected C57BL/6 Day0 Cerebellum     4
+GSM2545354 NonInfected C57BL/6 Day0 Cerebellum     2
+GSM2545356 NonInfected C57BL/6 Day0 Spinalcord     2
+GSM2545357 NonInfected C57BL/6 Day0 Spinalcord     3
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545361 NonInfected C57BL/6 Day0 Spinalcord     7
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10
+GSM2545367 NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf</span>,</span>
+<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf</span>, </span>
 <span>                      designFormula <span class="op">=</span> <span class="op">~</span> <span class="va">sex</span> <span class="op">+</span> <span class="va">tissue</span><span class="op">)</span></span>
 <span><span class="va">vd</span><span class="op">$</span><span class="va">designmatrix</span></span></code></pre>
 </div>
@@ -629,7 +713,7 @@ GSM2545367           1       1                1</code></pre>
 </h3>
 <pre class="output" tabindex="0"><code>[[1]]</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-7-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="factorial-design-with-interactions"><h2 class="section-heading">Factorial design with interactions<a class="anchor" aria-label="anchor" href="#factorial-design-with-interactions"></a>
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-8-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="factorial-design-with-interactions"><h2 class="section-heading">Factorial design with interactions<a class="anchor" aria-label="anchor" href="#factorial-design-with-interactions"></a>
 </h2>
 <hr class="half-width"><div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -641,28 +725,44 @@ GSM2545367           1       1                1</code></pre>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     9
-GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum    10
-GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum    11
-GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     8
-GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     7
-GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     4
-GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Cerebellum     2
-GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     2
-GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     3
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord     7
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10
-GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female
+GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female
+GSM2545343 CNS_RNA-seq_20C    GSM2545343 Mus musculus 8 weeks   Male
+GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female
+GSM2545349 CNS_RNA-seq_28C    GSM2545349 Mus musculus 8 weeks   Male
+GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female
+GSM2545354  CNS_RNA-seq_4C    GSM2545354 Mus musculus 8 weeks   Male
+GSM2545356 CNS_RNA-seq_574    GSM2545356 Mus musculus 8 weeks   Male
+GSM2545357 CNS_RNA-seq_575    GSM2545357 Mus musculus 8 weeks   Male
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545361 CNS_RNA-seq_590    GSM2545361 Mus musculus 8 weeks   Male
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+GSM2545367 CNS_RNA-seq_713    GSM2545367 Mus musculus 8 weeks   Male
+             infection  strain time     tissue mouse
+GSM2545337 NonInfected C57BL/6 Day0 Cerebellum     9
+GSM2545338 NonInfected C57BL/6 Day0 Cerebellum    10
+GSM2545343 NonInfected C57BL/6 Day0 Cerebellum    11
+GSM2545348 NonInfected C57BL/6 Day0 Cerebellum     8
+GSM2545349 NonInfected C57BL/6 Day0 Cerebellum     7
+GSM2545353 NonInfected C57BL/6 Day0 Cerebellum     4
+GSM2545354 NonInfected C57BL/6 Day0 Cerebellum     2
+GSM2545356 NonInfected C57BL/6 Day0 Spinalcord     2
+GSM2545357 NonInfected C57BL/6 Day0 Spinalcord     3
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545361 NonInfected C57BL/6 Day0 Spinalcord     7
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10
+GSM2545367 NonInfected C57BL/6 Day0 Spinalcord    11</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb27">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf</span>,</span>
+<code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_noninf</span>, </span>
 <span>                      designFormula <span class="op">=</span> <span class="op">~</span> <span class="va">sex</span> <span class="op">*</span> <span class="va">tissue</span><span class="op">)</span></span>
 <span><span class="va">vd</span><span class="op">$</span><span class="va">designmatrix</span></span></code></pre>
 </div>
@@ -697,28 +797,37 @@ GSM2545367           1       1                1                        1</code><
 </h3>
 <pre class="output" tabindex="0"><code>[[1]]</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-8-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="paired-design"><h2 class="section-heading">Paired design<a class="anchor" aria-label="anchor" href="#paired-design"></a>
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-9-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="paired-design"><h2 class="section-heading">Paired design<a class="anchor" aria-label="anchor" href="#paired-design"></a>
 </h2>
 <hr class="half-width"><div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">meta_fem_day0</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span> <span class="fu">filter</span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Female"</span> <span class="op">&amp;</span></span>
+<code class="sourceCode R"><span><span class="va">meta_fem_day0</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span> <span class="fu">filter</span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Female"</span> <span class="op">&amp;</span> </span>
 <span>                                     <span class="va">time</span> <span class="op">==</span> <span class="st">"Day0"</span><span class="op">)</span></span>
 <span><span class="va">meta_fem_day0</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     9
-GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum    10
-GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     8
-GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     4
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female
+GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female
+GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female
+GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+             infection  strain time     tissue mouse
+GSM2545337 NonInfected C57BL/6 Day0 Cerebellum     9
+GSM2545338 NonInfected C57BL/6 Day0 Cerebellum    10
+GSM2545348 NonInfected C57BL/6 Day0 Cerebellum     8
+GSM2545353 NonInfected C57BL/6 Day0 Cerebellum     4
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -752,14 +861,14 @@ GSM2545366           1    10                1</code></pre>
 </h3>
 <pre class="output" tabindex="0"><code>[[1]]</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-9-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="within--and-between-subject-comparisons"><h2 class="section-heading">Within- and between-subject comparisons<a class="anchor" aria-label="anchor" href="#within--and-between-subject-comparisons"></a>
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-10-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure></section><section id="within--and-between-subject-comparisons"><h2 class="section-heading">Within- and between-subject comparisons<a class="anchor" aria-label="anchor" href="#within--and-between-subject-comparisons"></a>
 </h2>
 <hr class="half-width"><div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">meta_fem_day04</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span></span>
-<span>    <span class="fu">filter</span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Female"</span> <span class="op">&amp;</span></span>
+<code class="sourceCode R"><span><span class="va">meta_fem_day04</span> <span class="op">&lt;-</span> <span class="va">meta</span> <span class="op">%&gt;%</span> </span>
+<span>    <span class="fu">filter</span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Female"</span> <span class="op">&amp;</span> </span>
 <span>               <span class="va">time</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Day0"</span>, <span class="st">"Day4"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>    <span class="fu">droplevels</span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="va">meta_fem_day04</span></span></code></pre>
@@ -767,33 +876,50 @@ GSM2545366           1    10                1</code></pre>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex   infection  strain time     tissue mouse
-GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     9
-GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum    10
-GSM2545339 CNS_RNA-seq_13C    GSM2545339 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    15
-GSM2545344 CNS_RNA-seq_21C    GSM2545344 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    22
-GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     8
-GSM2545352 CNS_RNA-seq_30C    GSM2545352 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    21
-GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Cerebellum     4
-GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     4
-GSM2545362  CNS_RNA-seq_5C    GSM2545362 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Cerebellum    20
-GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     8
-GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord     9
-GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female NonInfected C57BL/6 Day0 Spinalcord    10
-GSM2545371 CNS_RNA-seq_731    GSM2545371 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    15
-GSM2545375 CNS_RNA-seq_738    GSM2545375 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    20
-GSM2545376 CNS_RNA-seq_740    GSM2545376 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    21
-GSM2545377 CNS_RNA-seq_741    GSM2545377 Mus musculus 8 weeks Female  InfluenzaA C57BL/6 Day4 Spinalcord    22</code></pre>
+<pre class="output" tabindex="0"><code>                     title geo_accession     organism     age    sex
+GSM2545337 CNS_RNA-seq_11C    GSM2545337 Mus musculus 8 weeks Female
+GSM2545338 CNS_RNA-seq_12C    GSM2545338 Mus musculus 8 weeks Female
+GSM2545339 CNS_RNA-seq_13C    GSM2545339 Mus musculus 8 weeks Female
+GSM2545344 CNS_RNA-seq_21C    GSM2545344 Mus musculus 8 weeks Female
+GSM2545348 CNS_RNA-seq_27C    GSM2545348 Mus musculus 8 weeks Female
+GSM2545352 CNS_RNA-seq_30C    GSM2545352 Mus musculus 8 weeks Female
+GSM2545353  CNS_RNA-seq_3C    GSM2545353 Mus musculus 8 weeks Female
+GSM2545358 CNS_RNA-seq_583    GSM2545358 Mus musculus 8 weeks Female
+GSM2545362  CNS_RNA-seq_5C    GSM2545362 Mus musculus 8 weeks Female
+GSM2545364 CNS_RNA-seq_709    GSM2545364 Mus musculus 8 weeks Female
+GSM2545365 CNS_RNA-seq_710    GSM2545365 Mus musculus 8 weeks Female
+GSM2545366 CNS_RNA-seq_711    GSM2545366 Mus musculus 8 weeks Female
+GSM2545371 CNS_RNA-seq_731    GSM2545371 Mus musculus 8 weeks Female
+GSM2545375 CNS_RNA-seq_738    GSM2545375 Mus musculus 8 weeks Female
+GSM2545376 CNS_RNA-seq_740    GSM2545376 Mus musculus 8 weeks Female
+GSM2545377 CNS_RNA-seq_741    GSM2545377 Mus musculus 8 weeks Female
+             infection  strain time     tissue mouse
+GSM2545337 NonInfected C57BL/6 Day0 Cerebellum     9
+GSM2545338 NonInfected C57BL/6 Day0 Cerebellum    10
+GSM2545339  InfluenzaA C57BL/6 Day4 Cerebellum    15
+GSM2545344  InfluenzaA C57BL/6 Day4 Cerebellum    22
+GSM2545348 NonInfected C57BL/6 Day0 Cerebellum     8
+GSM2545352  InfluenzaA C57BL/6 Day4 Cerebellum    21
+GSM2545353 NonInfected C57BL/6 Day0 Cerebellum     4
+GSM2545358 NonInfected C57BL/6 Day0 Spinalcord     4
+GSM2545362  InfluenzaA C57BL/6 Day4 Cerebellum    20
+GSM2545364 NonInfected C57BL/6 Day0 Spinalcord     8
+GSM2545365 NonInfected C57BL/6 Day0 Spinalcord     9
+GSM2545366 NonInfected C57BL/6 Day0 Spinalcord    10
+GSM2545371  InfluenzaA C57BL/6 Day4 Spinalcord    15
+GSM2545375  InfluenzaA C57BL/6 Day4 Spinalcord    20
+GSM2545376  InfluenzaA C57BL/6 Day4 Spinalcord    21
+GSM2545377  InfluenzaA C57BL/6 Day4 Spinalcord    22</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb39">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">design</span> <span class="op">&lt;-</span> <span class="fu">model.matrix</span><span class="op">(</span><span class="op">~</span> <span class="va">mouse</span>, data <span class="op">=</span> <span class="va">meta_fem_day04</span><span class="op">)</span></span>
-<span><span class="va">design</span> <span class="op">&lt;-</span> <span class="fu">cbind</span><span class="op">(</span><span class="va">design</span>,</span>
-<span>                Spc.Day0 <span class="op">=</span> <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">tissue</span> <span class="op">==</span> <span class="st">"Spinalcord"</span> <span class="op">&amp;</span></span>
+<span><span class="va">design</span> <span class="op">&lt;-</span> <span class="fu">cbind</span><span class="op">(</span><span class="va">design</span>, </span>
+<span>                Spc.Day0 <span class="op">=</span> <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">tissue</span> <span class="op">==</span> <span class="st">"Spinalcord"</span> <span class="op">&amp;</span> </span>
 <span>                    <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">time</span> <span class="op">==</span> <span class="st">"Day0"</span>,</span>
-<span>                Spc.Day4 <span class="op">=</span> <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">tissue</span> <span class="op">==</span> <span class="st">"Spinalcord"</span> <span class="op">&amp;</span></span>
+<span>                Spc.Day4 <span class="op">=</span> <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">tissue</span> <span class="op">==</span> <span class="st">"Spinalcord"</span> <span class="op">&amp;</span> </span>
 <span>                    <span class="va">meta_fem_day04</span><span class="op">$</span><span class="va">time</span> <span class="op">==</span> <span class="st">"Day4"</span><span class="op">)</span></span>
 <span><span class="fu">rownames</span><span class="op">(</span><span class="va">design</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">rownames</span><span class="op">(</span><span class="va">meta_fem_day04</span><span class="op">)</span></span>
 <span><span class="va">design</span></span></code></pre>
@@ -825,7 +951,7 @@ GSM2545377           1    22        0        1</code></pre>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">vd</span> <span class="op">&lt;-</span> <span class="fu">VisualizeDesign</span><span class="op">(</span>sampleData <span class="op">=</span> <span class="va">meta_fem_day04</span> <span class="op">%&gt;%</span></span>
 <span>                          <span class="fu">select</span><span class="op">(</span><span class="va">time</span>, <span class="va">tissue</span>, <span class="va">mouse</span><span class="op">)</span>,</span>
-<span>                      designFormula <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>                      designFormula <span class="op">=</span> <span class="cn">NULL</span>, </span>
 <span>                      designMatrix <span class="op">=</span> <span class="va">design</span>, flipCoordFitted <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="va">vd</span><span class="op">$</span><span class="va">designmatrix</span></span></code></pre>
 </div>
@@ -861,13 +987,13 @@ GSM2545377           1    22        0        1</code></pre>
 </h3>
 <pre class="output" tabindex="0"><code>$`time = Day0`</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-10-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper">
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-11-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>
 $`time = Day4`</code></pre>
 </div>
-<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-10-2.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="keypoints1" class="callout keypoints">
+<figure><img src="../fig/03-experimental-design-rendered-unnamed-chunk-11-2.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -909,7 +1035,7 @@ $`time = Day4`</code></pre>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/1d3213291c4f298e5c8b9d42e629fdeae734626c" class="external-link">sandpaper (0.11.6)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/3bb22eff927a1fbe1017000f3ba8c2d91244b89a" class="external-link">sandpaper (0.11.6)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/e815ea1a34f6eda01a3c9ab9643e35aa051e1938" class="external-link">pegboard (0.4.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/04d63279b267641d9dbe96cd231072e445938752" class="external-link">varnish (0.2.14)</a>.</p>
 			</div>
@@ -932,8 +1058,8 @@ $`time = Day4`</code></pre>
   "url": "https://preview.carpentries.org/bioc-rnaseqinstructor/03-experimental-design.html",
   "identifier": "https://preview.carpentries.org/bioc-rnaseqinstructor/03-experimental-design.html",
   "dateCreated": "2023-02-15",
-  "dateModified": "2023-02-15",
-  "datePublished": "2023-02-15"
+  "dateModified": "2023-02-20",
+  "datePublished": "2023-02-20"
 }
 
   </script><script>
