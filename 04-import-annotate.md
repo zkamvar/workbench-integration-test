@@ -39,7 +39,7 @@ like tximeta).
 
 
 ```r
-counts <- read.csv("data/GSE96870_counts_cerebellum.csv",
+counts <- read.csv("data/GSE96870_counts_cerebellum.csv", 
                    row.names = 1)
 ```
 
@@ -57,7 +57,7 @@ Need to be careful - the descriptions contain both commas and ' (e.g., 5')
 
 
 ```r
-rowranges <- read.delim("data/GSE96870_rowranges.tsv", sep = "\t",
+rowranges <- read.delim("data/GSE96870_rowranges.tsv", sep = "\t", 
                         colClasses = c(ENTREZID = "character"),
                         header = TRUE, quote = "", row.names = 5)
 ```

@@ -21,6 +21,8 @@ exercises: XX
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ### Contribute!
@@ -54,8 +56,8 @@ dds <- DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"],
 ```
 
 ```{.warning}
-Warning in DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"], design = ~sex + : some variables in design formula are
-characters, converting to factors
+Warning in DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"], design = ~sex
++ : some variables in design formula are characters, converting to factors
 ```
 
 
@@ -102,13 +104,20 @@ head(sexDE)
 ```
 
 ```{.output}
-               baseMean log2FoldChange     lfcSE      stat        pvalue          padj
-Eif2s3y       1410.8750       12.62514 0.5652155  22.33685 1.620659e-110 1.022366e-106
-Kdm5d          692.1672       12.55386 0.5936267  21.14773  2.895664e-99  1.370011e-95
-Uty            667.4375       12.01728 0.5935911  20.24505  3.927797e-91  1.486671e-87
-Ddx3y         2072.9436       11.87241 0.3974927  29.86825 5.087220e-196 4.813782e-192
-Xist         22603.0359      -11.60429 0.3362822 -34.50761 6.168523e-261 1.167393e-256
-LOC105243748    52.9669        9.08325 0.5976242  15.19893  3.594320e-52  1.133708e-48
+               baseMean log2FoldChange     lfcSE      stat        pvalue
+Eif2s3y       1410.8750       12.62514 0.5652155  22.33685 1.620659e-110
+Kdm5d          692.1672       12.55386 0.5936267  21.14773  2.895664e-99
+Uty            667.4375       12.01728 0.5935911  20.24505  3.927797e-91
+Ddx3y         2072.9436       11.87241 0.3974927  29.86825 5.087220e-196
+Xist         22603.0359      -11.60429 0.3362822 -34.50761 6.168523e-261
+LOC105243748    52.9669        9.08325 0.5976242  15.19893  3.594320e-52
+                      padj
+Eif2s3y      1.022366e-106
+Kdm5d         1.370011e-95
+Uty           1.486671e-87
+Ddx3y        4.813782e-192
+Xist         1.167393e-256
+LOC105243748  1.133708e-48
 ```
 
 ```r
@@ -117,7 +126,8 @@ head(sexDEgenes)
 ```
 
 ```{.output}
-[1] "Eif2s3y"      "Kdm5d"        "Uty"          "Ddx3y"        "Xist"         "LOC105243748"
+[1] "Eif2s3y"      "Kdm5d"        "Uty"          "Ddx3y"        "Xist"        
+[6] "LOC105243748"
 ```
 
 ```r
@@ -164,7 +174,7 @@ and being located in a sex chromosome.
 N <- nrow(se)
 n <- length(sexDEgenes)
 m <- length(xygenes)
-k <- length(intersect(xygenes, sexDEgenes))
+k <- length(intersect(xygenes, sexDEgenes)) 
 dnames <- list(GS=c("inside", "outside"), DE=c("yes", "no"))
 t <- matrix(c(k, n-k, m-k, N+k-n-m),
                         nrow=2, ncol=2, dimnames=dnames)
@@ -254,13 +264,20 @@ head(timeDE)
 ```
 
 ```{.output}
-              baseMean log2FoldChange     lfcSE      stat       pvalue         padj
-LOC105245444  2.441873       4.768938 0.9013067  5.291138 1.215573e-07 1.800765e-06
-LOC105246405  9.728219       4.601505 0.6101832  7.541186 4.657174e-14 2.507951e-12
-4933427D06Rik 1.480365       4.556126 1.0318402  4.415535 1.007607e-05 9.169093e-05
-A930006I01Rik 2.312732      -4.353155 0.9176026 -4.744053 2.094837e-06 2.252139e-05
-LOC105245223  3.272536       4.337202 0.8611255  5.036666 4.737099e-07 6.047199e-06
-A530053G22Rik 1.554735       4.243903 1.0248977  4.140806 3.460875e-05 2.720142e-04
+              baseMean log2FoldChange     lfcSE      stat       pvalue
+LOC105245444  2.441873       4.768938 0.9013067  5.291138 1.215573e-07
+LOC105246405  9.728219       4.601505 0.6101832  7.541186 4.657174e-14
+4933427D06Rik 1.480365       4.556126 1.0318402  4.415535 1.007607e-05
+A930006I01Rik 2.312732      -4.353155 0.9176026 -4.744053 2.094837e-06
+LOC105245223  3.272536       4.337202 0.8611255  5.036666 4.737099e-07
+A530053G22Rik 1.554735       4.243903 1.0248977  4.140806 3.460875e-05
+                      padj
+LOC105245444  1.800765e-06
+LOC105246405  2.507951e-12
+4933427D06Rik 9.169093e-05
+A930006I01Rik 2.252139e-05
+LOC105245223  6.047199e-06
+A530053G22Rik 2.720142e-04
 ```
 
 ```r
@@ -269,7 +286,8 @@ head(timeDEgenes)
 ```
 
 ```{.output}
-[1] "LOC105245444"  "LOC105246405"  "4933427D06Rik" "A930006I01Rik" "LOC105245223"  "A530053G22Rik"
+[1] "LOC105245444"  "LOC105246405"  "4933427D06Rik" "A930006I01Rik"
+[5] "LOC105245223"  "A530053G22Rik"
 ```
 
 ```r
@@ -309,20 +327,20 @@ head(resTimeGO)
 ```
 
 ```{.output}
-                   ID                                           Description GeneRatio   BgRatio       pvalue
-GO:0035456 GO:0035456                           response to interferon-beta   17/1260  54/21417 6.434058e-09
-GO:0071674 GO:0071674                            mononuclear cell migration   32/1260 179/21417 1.596474e-08
-GO:0035458 GO:0035458                  cellular response to interferon-beta   15/1260  47/21417 4.064983e-08
-GO:0050900 GO:0050900                                   leukocyte migration   50/1260 375/21417 5.337558e-08
-GO:0030595 GO:0030595                                  leukocyte chemotaxis   34/1260 222/21417 2.880367e-07
-GO:0002523 GO:0002523 leukocyte migration involved in inflammatory response   10/1260  25/21417 6.944905e-07
-               p.adjust       qvalue
-GO:0035456 3.254347e-05 3.082930e-05
-GO:0071674 4.037482e-05 3.824814e-05
-GO:0035458 6.749342e-05 6.393832e-05
-GO:0050900 6.749342e-05 6.393832e-05
-GO:0030595 2.913780e-04 2.760302e-04
-GO:0002523 5.854555e-04 5.546176e-04
+                   ID                                           Description
+GO:0035456 GO:0035456                           response to interferon-beta
+GO:0071674 GO:0071674                            mononuclear cell migration
+GO:0035458 GO:0035458                  cellular response to interferon-beta
+GO:0050900 GO:0050900                                   leukocyte migration
+GO:0030595 GO:0030595                                  leukocyte chemotaxis
+GO:0002523 GO:0002523 leukocyte migration involved in inflammatory response
+           GeneRatio   BgRatio       pvalue     p.adjust       qvalue
+GO:0035456   17/1260  54/21417 6.434058e-09 3.254347e-05 3.082930e-05
+GO:0071674   32/1260 179/21417 1.596474e-08 4.037482e-05 3.824814e-05
+GO:0035458   15/1260  47/21417 4.064983e-08 6.749342e-05 6.393832e-05
+GO:0050900   50/1260 375/21417 5.337558e-08 6.749342e-05 6.393832e-05
+GO:0030595   34/1260 222/21417 2.880367e-07 2.913780e-04 2.760302e-04
+GO:0002523   10/1260  25/21417 6.944905e-07 5.854555e-04 5.546176e-04
                                                                                                                                                                                                                                                                                              geneID
 GO:0035456                                                                                                                                                                            Tgtp1/Tgtp2/F830016B08Rik/Iigp1/Ifitm6/Igtp/Gm4951/Bst2/Oas1c/Irgm1/Gbp6/Ifi47/Aim2/Ifitm7/Irgm2/Ifit1/Ifi204
 GO:0071674                                                                                                    Tnfsf18/Aire/Ccl17/Ccr7/Nlrp12/Ccl2/Retnlg/Apod/Il12a/Ccl5/Fut7/Ccl7/Spn/Itgb3/Grem1/Ptk2b/Lgals3/Adam8/Dusp1/Ch25h/Nbl1/Alox5/Padi2/Plg/Calr/Ager/Slamf9/Ccl6/Mdk/Itga4/Hsd3b7/Trpm4

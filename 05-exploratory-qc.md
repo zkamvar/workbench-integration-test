@@ -18,9 +18,8 @@ editor_options:
 
 :::::::::::::::::::::::::::::::::::::::: questions
 
--
+- 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -72,11 +71,11 @@ Warning in DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"], design = ~sex
 
 
 ```r
-ggplot(data.frame(sample = colnames(dds),
+ggplot(data.frame(sample = colnames(dds), 
                   libSize = colSums(assay(dds, "counts"))),
-       aes(x = sample, y = libSize)) +
-    geom_bar(stat = "identity") + theme_bw() +
-    labs(x = "Sample", y = "Total count") +
+       aes(x = sample, y = libSize)) + 
+    geom_bar(stat = "identity") + theme_bw() + 
+    labs(x = "Sample", y = "Total count") + 
     theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
 ```
 
@@ -103,8 +102,8 @@ There is a fixed number of reads to distribute between the genes, and if a singl
 dds <- estimateSizeFactors(dds)
 ggplot(data.frame(libSize = colSums(assay(dds, "counts")),
                   sizeFactor = sizeFactors(dds)),
-       aes(x = libSize, y = sizeFactor)) +
-    geom_point(size = 5) + theme_bw() +
+       aes(x = libSize, y = sizeFactor)) + 
+    geom_point(size = 5) + theme_bw() + 
     labs(x = "Library size", y = "Size factor")
 ```
 
@@ -142,7 +141,7 @@ meanSdPlot(assay(vsd), ranks = FALSE)
 dst <- dist(t(assay(vsd)))
 colors <- colorRampPalette(brewer.pal(9, "Blues"))(255)
 ComplexHeatmap::Heatmap(
-    as.matrix(dst),
+    as.matrix(dst), 
     col = colors,
     name = "Euclidean\ndistance",
     cluster_rows = hclust(dst),
@@ -178,7 +177,7 @@ ggplot(pcaData, aes(x = PC1, y = PC2)) +
     theme_minimal() +
     xlab(paste0("PC1: ", percentVar[1], "% variance")) +
     ylab(paste0("PC2: ", percentVar[2], "% variance")) +
-    coord_fixed() +
+    coord_fixed() + 
     scale_color_manual(values = c(Male = "blue", Female = "red"))
 ```
 
@@ -212,7 +211,7 @@ attached base packages:
 
 other attached packages:
  [1] hexbin_1.28.2               RColorBrewer_1.1-3         
- [3] ComplexHeatmap_2.14.0       ggplot2_3.4.1              
+ [3] ComplexHeatmap_2.14.0       ggplot2_3.4.0              
  [5] vsn_3.66.0                  DESeq2_1.38.3              
  [7] SummarizedExperiment_1.28.0 Biobase_2.58.0             
  [9] MatrixGenerics_1.10.0       matrixStats_0.63.0         

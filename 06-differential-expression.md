@@ -21,6 +21,7 @@ exercises: XX
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ### Contribute!
@@ -61,8 +62,8 @@ dds <- DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"],
 ```
 
 ```{.warning}
-Warning in DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"], design = ~sex + : some variables in design formula are
-characters, converting to factors
+Warning in DESeq2::DESeqDataSet(se[, se$tissue == "Cerebellum"], design = ~sex
++ : some variables in design formula are characters, converting to factors
 ```
 
 ## Run DESeq()
@@ -111,7 +112,7 @@ fitting model and testing
 plotDispEsts(dds)
 ```
 
-<img src="fig/06-differential-expression-rendered-unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="fig/06-differential-expression-rendered-unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
 
 ## Extract results for specific contrasts
 
@@ -152,21 +153,29 @@ head(resTime[order(resTime$pvalue), ])
 log2 fold change (MLE): time Day8 vs Day0 
 Wald test p-value: time Day8 vs Day0 
 DataFrame with 6 rows and 6 columns
-               baseMean log2FoldChange     lfcSE      stat      pvalue        padj
-              <numeric>      <numeric> <numeric> <numeric>   <numeric>   <numeric>
-Asl             701.343        1.11733 0.0592541   18.8565 2.59885e-79 6.21386e-75
-Apod          18765.146        1.44698 0.0805186   17.9708 3.30147e-72 3.94690e-68
-Cyp2d22        2550.480        0.91020 0.0554756   16.4072 1.69794e-60 1.35326e-56
-Klk6            546.503       -1.67190 0.1058989  -15.7877 3.78228e-56 2.26086e-52
-Fcrls           184.235       -1.94701 0.1279847  -15.2128 2.90708e-52 1.39017e-48
-A330076C08Rik   107.250       -1.74995 0.1154279  -15.1606 6.45112e-52 2.57077e-48
+               baseMean log2FoldChange     lfcSE      stat      pvalue
+              <numeric>      <numeric> <numeric> <numeric>   <numeric>
+Asl             701.343        1.11733 0.0592541   18.8565 2.59885e-79
+Apod          18765.146        1.44698 0.0805186   17.9708 3.30147e-72
+Cyp2d22        2550.480        0.91020 0.0554756   16.4072 1.69794e-60
+Klk6            546.503       -1.67190 0.1058989  -15.7877 3.78228e-56
+Fcrls           184.235       -1.94701 0.1279847  -15.2128 2.90708e-52
+A330076C08Rik   107.250       -1.74995 0.1154279  -15.1606 6.45112e-52
+                     padj
+                <numeric>
+Asl           6.21386e-75
+Apod          3.94690e-68
+Cyp2d22       1.35326e-56
+Klk6          2.26086e-52
+Fcrls         1.39017e-48
+A330076C08Rik 2.57077e-48
 ```
 
 ```r
 DESeq2::plotMA(resTime)
 ```
 
-<img src="fig/06-differential-expression-rendered-unnamed-chunk-6-1.png" style="display: block; margin: auto;" />
+<img src="fig/06-differential-expression-rendered-unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
 ```r
 ## Male vs Female
@@ -195,21 +204,29 @@ head(resSex[order(resSex$pvalue), ])
 log2 fold change (MLE): sex Male vs Female 
 Wald test p-value: sex Male vs Female 
 DataFrame with 6 rows and 6 columns
-               baseMean log2FoldChange     lfcSE      stat       pvalue         padj
-              <numeric>      <numeric> <numeric> <numeric>    <numeric>    <numeric>
-Xist         22603.0359      -11.60429  0.336282  -34.5076 6.16852e-261 1.16739e-256
-Ddx3y         2072.9436       11.87241  0.397493   29.8683 5.08722e-196 4.81378e-192
-Eif2s3y       1410.8750       12.62514  0.565216   22.3369 1.62066e-110 1.02237e-106
-Kdm5d          692.1672       12.55386  0.593627   21.1477  2.89566e-99  1.37001e-95
-Uty            667.4375       12.01728  0.593591   20.2451  3.92780e-91  1.48667e-87
-LOC105243748    52.9669        9.08325  0.597624   15.1989  3.59432e-52  1.13371e-48
+               baseMean log2FoldChange     lfcSE      stat       pvalue
+              <numeric>      <numeric> <numeric> <numeric>    <numeric>
+Xist         22603.0359      -11.60429  0.336282  -34.5076 6.16852e-261
+Ddx3y         2072.9436       11.87241  0.397493   29.8683 5.08722e-196
+Eif2s3y       1410.8750       12.62514  0.565216   22.3369 1.62066e-110
+Kdm5d          692.1672       12.55386  0.593627   21.1477  2.89566e-99
+Uty            667.4375       12.01728  0.593591   20.2451  3.92780e-91
+LOC105243748    52.9669        9.08325  0.597624   15.1989  3.59432e-52
+                     padj
+                <numeric>
+Xist         1.16739e-256
+Ddx3y        4.81378e-192
+Eif2s3y      1.02237e-106
+Kdm5d         1.37001e-95
+Uty           1.48667e-87
+LOC105243748  1.13371e-48
 ```
 
 ```r
 DESeq2::plotMA(resSex)
 ```
 
-<img src="fig/06-differential-expression-rendered-unnamed-chunk-6-2.png" style="display: block; margin: auto;" />
+<img src="fig/06-differential-expression-rendered-unnamed-chunk-7-2.png" style="display: block; margin: auto;" />
 
 ## Visualize selected set of genes
 
@@ -239,7 +256,7 @@ ComplexHeatmap::Heatmap(heatmapData,
                         cluster_rows = TRUE, cluster_columns = FALSE)
 ```
 
-<img src="fig/06-differential-expression-rendered-unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="fig/06-differential-expression-rendered-unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
