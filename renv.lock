@@ -59,14 +59,14 @@
     },
     "cachem": {
       "Package": "cachem",
-      "Version": "1.0.6",
+      "Version": "1.0.7",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "fastmap",
         "rlang"
       ],
-      "Hash": "648c5b3d71e6a37e3043617489a0a0e9"
+      "Hash": "cda74447c42f529de601fe4d4050daef"
     },
     "cli": {
       "Package": "cli",
@@ -114,10 +114,10 @@
     },
     "fastmap": {
       "Package": "fastmap",
-      "Version": "1.1.0",
+      "Version": "1.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "77bd60a6157420d4ffa93b27cf6a58b8"
+      "Hash": "f7736a18de97dea803bde0a2daaafb27"
     },
     "fs": {
       "Package": "fs",
@@ -261,13 +261,16 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.16.0",
+      "Version": "0.17.0-38",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "RemoteType": "repository",
+      "RemoteUrl": "https://github.com/rstudio/renv",
+      "RemoteRef": "0.17.0-38",
+      "RemoteSha": "fd9181395e13652d2b3dc942ac1bf807e9564c25",
       "Requirements": [
         "utils"
       ],
-      "Hash": "c9e8442ab69bc21c9697ecf856c1e6c7"
+      "Hash": "883fcb30a0c9c37a3105bb393d72c175"
     },
     "rlang": {
       "Package": "rlang",
